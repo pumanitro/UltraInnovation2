@@ -10,69 +10,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('select').material_select();
-    });
-</script>
+<div class="boX">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            $(document).ready(function() {
+                $('select').material_select();
+            });
 
-<div class="row" style="margin-top: 20px">
-    <form class="col s10">
-        <div class="row">
-            <div class="input-field col s2">
-                <input id="name" type="text" class="validate">
-                <label for="name">Name</label>
+            function myFunction() {
+                var table = document.getElementById("myTable");
+                var row = table.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = document.getElementById("name").value;
+                cell2.innerHTML = document.getElementById("type").value
+                cell3.innerHTML = document.getElementById("url").value;
+            }
+        </script>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Log Out</a></li>
+                    <li><a href="badges.html">Log In</a></li>
+                </ul>
             </div>
-            <div class="input-field col s4">
-                <select id="type">
-                    <option value="" disabled selected>Choose one</option>
-                    <option value="1">Youtube</option>
-                    <option value="2">Facebook</option>
-                    <option value="3">Instagram</option>
-                    <option value="3">Twitch</option>
-                    <option value="3">Twitter</option>
-                    <option value="3">Spotify</option>
-                </select>
-                <label>Type:</label>
-            </div>
-            <div class="input-field col s4">
-                <input id="url" type="text" class="validate">
-                <label for="url">URL</label>
-            </div>
-            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </nav>
+    <div style="width: 900px; margin-left: 200px">
+        <div class="row" style="margin-top: 20px">
+            <form class="col s10">
+                <div class="row">
+                    <div class="input-field col s2">
+                        <input id="name" type="text" class="validate">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <select id="type">
+                            <option value="" disabled selected>Choose one</option>
+                            <option value="Youtube">Youtube</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Twitch">Twitch</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Spotify">Spotify</option>
+                        </select>
+                        <label>Type:</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="url" type="text" class="validate">
+                        <label for="url">URL</label>
+                    </div>
+                    <a class="btn-floating btn-large waves-effect waves-light red" onclick="myFunction()"><i class="material-icons">add</i></a>
+                </div>
+            </form>
         </div>
-    </form>
+
+        <table id="myTable" class="highlight">
+            <thead>
+            <tr>
+                <th data-field="id">Name</th>
+                <th data-field="name">Type</th>
+                <th data-field="price">URL</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Krzysztof Gonciarz</td>
+                <td>YouTube</td>
+                <td>https://www.youtube.com/user/wybuchajacebeczki</td>
+            </tr>
+            <tr>
+                <td>The White House</td>
+                <td>Facebook</td>
+                <td>https://www.facebook.com/WhiteHouse</td>
+            </tr>
+            <tr>
+                <td>Blizzard</td>
+                <td>Twitter</td>
+                <td>https://twitter.com/blizzardcseu_pl</td>
+            </tr>
+            </tbody>
+        </table>
+        <a class="waves-effect waves-light btn-large" style="float: right">Accept</a>
+    </div>
 </div>
-
-<table>
-    <thead>
-    <tr>
-        <th data-field="id">Name</th>
-        <th data-field="name">Type</th>
-        <th data-field="price">URL</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    <tr>
-        <td>Alvin</td>
-        <td>Eclair</td>
-        <td>$0.87</td>
-    </tr>
-    <tr>
-        <td>Alan</td>
-        <td>Jellybean</td>
-        <td>$3.76</td>
-    </tr>
-    <tr>
-        <td>Jonathan</td>
-        <td>Lollipop</td>
-        <td>$7.00</td>
-    </tr>
-    </tbody>
-</table>
-
 </body>
 </html>
