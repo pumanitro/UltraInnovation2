@@ -4,7 +4,7 @@ nav .nav-wrapper {
 }*/
 body
 {
-    background-color: #f5e8d6;
+    background-color: #e2e2e2;
 }
 .boX
 {
@@ -24,9 +24,12 @@ body
 {
     margin: 2rem 0 1rem 0;
 }
-i{
-    margin-top: 5px;
+
+.icon
+{
+    max-width: 30px;
 }
+
 .label
 {
     padding: 0px 5px 0px 5px;
@@ -48,17 +51,23 @@ i{
     background-color: #0084b4;
 }
 
-nav{
-    background-color: #99856a !important;
+nav
+{
+    background-color: #90caf9 !important;
 }
 
-.logo{
-    margin-left: 5px;
-    margin-top: 7px;
-    max-height: 50px !important;
+.logo
+{
+    margin-left: 20px;
 }
 
 .section-one
 {
     height: 400px;
+}
+
+.grey
+{
+    color: #aab8c2;
+    background-color: #ffffff !important;
 }
