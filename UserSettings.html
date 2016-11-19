@@ -42,13 +42,13 @@
         </nav>
     <div style="width: 900px; margin-left: 200px">
         <div class="row" style="margin-top: 20px">
-            <form class="col s10">
+            <form class="col s12">
                 <div class="row">
-                    <div class="input-field col s2">
+                    <div class="input-field col s4">
                         <input id="name" type="text" class="validate">
                         <label for="name">Name</label>
                     </div>
-                    <div class="input-field col s4">
+                    <div class="input-field col s3">
                         <select id="type">
                             <option value="" disabled selected>Choose one</option>
                             <option value="Youtube">Youtube</option>
@@ -64,7 +64,7 @@
                         <input id="url" type="text" class="validate">
                         <label for="url">URL</label>
                     </div>
-                    <a class="btn-floating btn-large waves-effect waves-light red" onclick="myFunction()"><i class="material-icons">add</i></a>
+                    <a class="btn-floating btn-flat waves-effect waves-light red" onclick="myFunction()" style="margin-top: 20px"><i class="material-icons">add</i></a>
                 </div>
             </form>
         </div>
@@ -74,7 +74,7 @@
             <tr>
                 <th data-field="id">Name</th>
                 <th data-field="name">Type</th>
-                <th data-field="price">URL</th>
+                <th data-field="price" style="width: 100px">URL</th>
             </tr>
             </thead>
 
@@ -96,7 +96,7 @@
             </tr>
             </tbody>
         </table>
-        <a class="waves-effect waves-light btn-large" style="float: right">Accept</a>
+        <a class="waves-effect waves-light btn-large" style="float: right; margin-top: 20px">Accept</a>
     </div>
 </div>
 </body>
