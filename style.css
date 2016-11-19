@@ -2,19 +2,31 @@
 nav .nav-wrapper {
     background-color: blue;
 }*/
-
-.boX{
-    width: 1240px;
+body
+{
+    background-color: #f5e8d6;
+}
+.boX
+{
+    max-width: 1360px;
     margin:auto;
 }
 
 .boXSmall{
-    width: 620px;
+    max-width: 680px;
     margin:auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 /* MBA */
-
+.card
+{
+    margin: 2rem 0 1rem 0;
+}
+i{
+    margin-top: 5px;
+}
 .label
 {
     padding: 0px 5px 0px 5px;
@@ -34,4 +46,19 @@ nav .nav-wrapper {
 .color-twitter
 {
     background-color: #0084b4;
+}
+
+nav{
+    background-color: #99856a !important;
+}
+
+.logo{
+    margin-left: 5px;
+    margin-top: 7px;
+    max-height: 50px !important;
+}
+
+.section-one
+{
+    height: 400px;
 }
