@@ -71,3 +71,11 @@ nav
     color: #aab8c2;
     background-color: #ffffff !important;
 }
+
+.logoImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
